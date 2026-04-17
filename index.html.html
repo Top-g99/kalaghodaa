@@ -662,5 +662,20 @@ function submitB(){
   document.getElementById('cv').classList.add('show');
 }
 </script>
+
+<!-- Knowtive AI Chat Widget -->
+<script>
+(function() {
+    var s = document.createElement('script');
+    s.src = 'http://localhost:8000/widget/chatbot.js';
+    s.async = true;
+    s.integrity = 'sha384-TJy/pwdQUW2Vlh05cxweIiaURxdspRnTT1UltS5IiMmHpZ3KOevOuQlCwg+lFIoq';
+    s.crossOrigin = 'anonymous';
+    s.dataset.siteId = 'e7f275c614c1';
+    s.dataset.apiUrl = 'http://localhost:8000';
+    document.head.appendChild(s);
+})();
+</script>
+
 </body>
 </html>
